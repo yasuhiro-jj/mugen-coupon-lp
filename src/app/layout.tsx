@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | 無限クーポン 業種別LP",
   },
   description:
-    "美容室・サロン・医院・ジムなど10業種向け。LINE×無限クーポンでリピートと来店を自動化する訴求のひな型です。",
+    "美容室・飲食店・サロン・医院・ジムなど11業種向け。LINE×無限クーポンでリピートと来店を自動化する訴求のひな型です。",
   keywords: [
     "LINE",
     "クーポン",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "無限クーポン 業種別LP",
     description:
-      "10業種の独立したランディングページ。業態に合わせたヒーロー・課題・ステップ配信のイメージをご覧いただけます。",
+      "11業種の独立したランディングページ。業態に合わせたヒーロー・課題・ステップ配信のイメージをご覧いただけます。",
     url: siteUrl,
     siteName: "無限クーポン 業種別LP",
     locale: "ja_JP",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "無限クーポン 業種別LP",
     description:
-      "LINE×無限クーポンでリピートを育てる。10業種のLP一覧から業態を選べます。",
+      "LINE×無限クーポンでリピートを育てる。11業種のLP一覧から業態を選べます。",
     images: ["/images/og-default.png"],
   },
   robots: { index: true, follow: true },

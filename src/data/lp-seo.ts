@@ -81,6 +81,13 @@ export const lpSeoBySlug: Record<string, LpSeoEntry> = {
     ogImage: OG_PLACEHOLDER,
     ogImageAlt: "カフェ・ベーカリー向け 無限クーポン",
   },
+  restaurant: {
+    title: "飲食店の無限クーポン | グルメサイト依存を減らしLINEで常連化",
+    description:
+      "クーポン一見客のリピートと、予約サイトコストの課題に。LINE×無限クーポンで空席・閑散時間を平準化する方法を解説。note ¥4,980で構築マニュアル公開中。",
+    ogImage: OG_PLACEHOLDER,
+    ogImageAlt: "飲食店向け 無限クーポン",
+  },
 };
 
 export function getLpSeo(slug: string): LpSeoEntry | undefined {

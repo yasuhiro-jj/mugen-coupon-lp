@@ -29,16 +29,15 @@ export function HeroSection({ heroTitle, heroSubtitle, accentColor, ctaLink = "#
         aria-hidden
       />
 
-      <div className="relative z-10 mx-auto w-full max-w-4xl text-center">
-        <h1 className="text-balance text-3xl font-extrabold leading-snug tracking-tight text-white sm:text-4xl md:text-5xl lg:text-6xl">
+      <div className="relative z-10 mx-auto w-full max-w-3xl text-center">
+        <h1 className="mx-auto flex max-w-[min(100%,36rem)] flex-col gap-1.5 text-balance text-xl font-bold leading-snug tracking-tight text-white sm:gap-2 sm:text-2xl md:text-3xl md:leading-tight lg:text-3xl">
           {lines.map((line, i) => (
-            <span key={i}>
+            <span key={i} className="block">
               {line}
-              {i < lines.length - 1 ? <br /> : null}
             </span>
           ))}
         </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-pretty text-base leading-relaxed text-white/90 sm:text-lg md:text-xl">
+        <p className="mx-auto mt-5 max-w-2xl text-pretty text-sm leading-relaxed text-white/90 sm:mt-6 sm:text-base md:text-lg">
           {heroSubtitle}
         </p>
         <div className="mt-10">

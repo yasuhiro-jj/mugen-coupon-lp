@@ -12,7 +12,7 @@ export function generateStaticParams() {
   return lpDataList.map(({ slug }) => ({ slug }));
 }
 
-/** 上記10スラッグ以外はビルド対象外（未生成URLは404） */
+/** 上記11スラッグ以外はビルド対象外（未生成URLは404） */
 export const dynamicParams = false;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {

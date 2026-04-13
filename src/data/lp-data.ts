@@ -480,6 +480,56 @@ export const lpDataList: LPData[] = [
     },
     deliveryInterval: "5〜7日間隔",
   },
+  {
+    slug: "restaurant",
+    industry: "飲食店",
+    icon: "🍽️",
+    accentColor: "#DC2626",
+    heroTitle:
+      "グルメサイト・食べログ依存から卒業。\nLINE×無限クーポンで\n「常連の再来店」を自動で積み上げる",
+    heroSubtitle: "空席と閑散時間を、ステップ配信で平準化する",
+    problems: [
+      { icon: "🎫", text: "クーポン客が一見で終わりリピートしない" },
+      { icon: "💳", text: "予約サイトの手数料・露出コストが重い" },
+      { icon: "📊", text: "ランチとディナーで集客のムラが大きい" },
+      { icon: "🧑‍🍳", text: "忙しくて常連フォローまで手が回らない" },
+    ],
+    steps: [
+      { label: "初回特典", couponName: "ドリンク1杯無料", icon: stepIcons.first },
+      { label: "魅力紹介①", couponName: "名物メニュー10%OFF", icon: stepIcons.appeal1 },
+      { label: "魅力紹介②", couponName: "飲み放題延長30分", icon: stepIcons.appeal2 },
+      { label: "平日限定", couponName: "ランチタイム500円OFF", icon: stepIcons.weekday },
+      { label: "雨の日", couponName: "雨の日デザート1品サービス", icon: stepIcons.rain },
+      { label: "記念日", couponName: "誕生月コース特別価格", icon: stepIcons.anniversary },
+      { label: "季節限定", couponName: "季節メニュー先行予約", icon: stepIcons.seasonal },
+      { label: "再来店促進", couponName: "3回目おつまみセット", icon: stepIcons.repeat },
+      { label: "友だち紹介", couponName: "紹介で双方500円OFF", icon: stepIcons.referral },
+    ],
+    useCases: [
+      {
+        title: "閑散時間・空席の予約を誘導",
+        description:
+          "平日ランチや雨の日など、狙いたい時間帯にクーポンを合わせて席稼働を上げられます。",
+      },
+      {
+        title: "リスト内で完結する再来店導線",
+        description:
+          "グルメサイト経由に頼りすぎず、LINE上で次の来店理由を自動で積み上げられます。",
+      },
+      {
+        title: "厨房・ホールの負担を増やさない",
+        description:
+          "配信は一度設計すれば回り続けるため、ピーク時でもフォローが止まりません。",
+      },
+    ],
+    testimonial: {
+      quote:
+        "ランチとディナーのムラが減り、常連さんの再来間隔が短くなりました。現場の声かけに頼らなくて済みます。",
+      author: "地方都市・飲食店オーナー",
+      result: "再来率・回転の平準化に貢献",
+    },
+    deliveryInterval: "7〜14日間隔",
+  },
 ];
 
 export function getLpDataBySlug(slug: string): LPData | undefined {
