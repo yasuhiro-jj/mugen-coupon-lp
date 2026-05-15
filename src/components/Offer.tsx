@@ -2,6 +2,7 @@
 
 import { FadeInSection } from "@/components/FadeInSection";
 import { CTAButton } from "@/components/CTAButton";
+import { NOTE_URL } from "@/constants/links";
 
 const offerBadges = [
   "配信テンプレ10通付き",
@@ -41,7 +42,7 @@ export function Offer() {
         </div>
         <div className="flex justify-center">
           <CTAButton
-            href="https://note.com/xxxx"
+            href={NOTE_URL}
             variant="primary"
             ariaLabel="無限クーポン完全構築マニュアルを購入する"
           >

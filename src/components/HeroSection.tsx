@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NOTE_URL } from "@/constants/links";
 
 export type HeroSectionProps = {
   heroTitle: string;
@@ -7,7 +8,7 @@ export type HeroSectionProps = {
   ctaLink?: string;
 };
 
-export function HeroSection({ heroTitle, heroSubtitle, accentColor, ctaLink = "#" }: HeroSectionProps) {
+export function HeroSection({ heroTitle, heroSubtitle, accentColor, ctaLink = NOTE_URL }: HeroSectionProps) {
   const lines = heroTitle.split("\n");
 
   return (

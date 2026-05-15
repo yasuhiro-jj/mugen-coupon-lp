@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NOTE_URL } from "@/constants/links";
 
 export type HeaderProps = {
   accentColor: string;
@@ -12,7 +13,7 @@ export function Header({ accentColor }: HeaderProps) {
           無限クーポン
         </Link>
         <Link
-          href="#pricing"
+          href={NOTE_URL}
           className="inline-flex min-h-[40px] items-center justify-center rounded-full px-4 py-2 text-xs font-bold text-white shadow-sm transition hover:brightness-110 sm:text-sm"
           style={{ backgroundColor: accentColor }}
         >

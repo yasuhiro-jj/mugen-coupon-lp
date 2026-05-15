@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NOTE_URL } from "@/constants/links";
 
 export type FixedCTABarProps = {
   accentColor: string;
@@ -12,7 +13,7 @@ export function FixedCTABar({ accentColor }: FixedCTABarProps) {
     >
       <div className="mx-auto flex max-w-lg justify-center">
         <Link
-          href="#pricing"
+          href={NOTE_URL}
           className="inline-flex min-h-[48px] w-full max-w-md items-center justify-center rounded-full bg-white/15 px-6 text-base font-bold text-white backdrop-blur-sm transition hover:bg-white/25"
         >
           今すぐnoteで学ぶ ¥4,980
